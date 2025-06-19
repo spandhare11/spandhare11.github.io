@@ -1,0 +1,8 @@
+
+title: CyberSec by Shubham
+description: A personal cybersecurity portfolio and blog by Shubham Pandhare
+baseurl: ""
+url: "https://spandhare11.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
