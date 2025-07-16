@@ -1,125 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shubham Pandhare | Cybersecurity Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f8f8;
-      color: #333;
-    }
-    header {
-      background: #111;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.4rem;
-      margin-bottom: 1rem;
-      color: #007acc;
-    }
-    .section-block {
-      margin-bottom: 2rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-<header>
-  <h1>Shubham Pandhare</h1>
-  <p>Network & Cybersecurity Enthusiast | Trainee at Indoco Remedies</p>
-</header>
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <header className="bg-black text-white py-10 text-center">
+        <h1 className="text-4xl font-bold">Shubham Pandhare</h1>
+        <p className="text-lg mt-2">
+          Network & Cybersecurity Enthusiast | Trainee at Indoco Remedies
+        </p>
+      </header>
 
-<section class="section-block">
-  <h2>About Me</h2>
-  <p>
-    Hello! I'm Shubham Pandhare, passionate about cybersecurity and network engineering.
-    I’m currently working at Indoco Remedies as a trainee network engineer, where I handle network upgrades, monitoring, and rack configurations.
-  </p>
-</section>
+      <main className="max-w-4xl mx-auto px-4 py-10">
+        {/* Hero Summary */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold text-blue-600 mb-4">Hi, I’m Shubham Pandhare</h2>
+          <p className="text-lg leading-relaxed">
+            I’m a tech enthusiast specializing in <strong>cybersecurity analysis</strong>,
+            <strong> network defense</strong>, and <strong>threat detection</strong>. I'm passionate about securing digital environments and helping
+            individuals and organizations stay safe from evolving cyber threats.
+            Whether you need to assess vulnerabilities, monitor for suspicious
+            activity, or strengthen your overall security posture, I’ve got you
+            covered. Let’s team up and safeguard your digital world.
+          </p>
+        </section>
 
-<section class="section-block">
-  <h2>Skills</h2>
-  <ul>
-    <li>SIEM Tools: Wazuh, Splunk</li>
-    <li>Log Analysis: Sysmon, Event Viewer</li>
-    <li>Networking: VLAN, TCP/IP, Rack Setup</li>
-    <li>Tools: Git, GitHub, Wireshark, Nmap</li>
-    <li>Languages: Bash, PowerShell</li>
-  </ul>
-</section>
+        {/* Skills */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Skills</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>SIEM Tools: Wazuh, Splunk</li>
+            <li>Log Analysis: Sysmon, Event Viewer</li>
+            <li>Networking: VLAN, TCP/IP, Rack Setup</li>
+            <li>Tools: Git, GitHub, Wireshark, Nmap</li>
+            <li>Languages: Bash, PowerShell</li>
+          </ul>
+        </section>
 
-<section class="section-block">
-  <h2>Projects</h2>
+        {/* Projects */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-6">Projects</h2>
 
-  <h3>🔹 Splunk SIEM Monitoring Project</h3>
-  <p>Configured Sysmon to monitor Windows logs, exported data to Splunk, and created alerts for reverse shell detection.</p>
-  <p><a href="https://enchanted-snowboard-a2d.notion.site/Splunk-22eb3b78551d8053851ddfd7e41fe24c" target="_blank">View Project on Notion</a></p>
+          <Card className="mb-6">
+            <CardContent className="py-4">
+              <h3 className="text-xl font-semibold mb-1">🔹 Splunk SIEM Monitoring Project</h3>
+              <p>
+                Configured Sysmon to monitor Windows logs, exported data to Splunk,
+                and created alerts for reverse shell detection.
+              </p>
+              <Button asChild variant="link">
+                <a href="https://enchanted-snowboard-a2d.notion.site/Splunk-22eb3b78551d8053851ddfd7e41fe24c" target="_blank">
+                  View Project
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
 
-  <h3>🔹 Wazuh Logging Lab</h3>
-  <p>Built a logging environment using Wazuh and the ELK stack to monitor endpoints and detect anomalies.</p>
-  <p><a href="#">Coming Soon...</a></p>
-</section>
+          <Card>
+            <CardContent className="py-4">
+              <h3 className="text-xl font-semibold mb-1">🔹 Wazuh Logging Lab</h3>
+              <p>
+                Built a logging environment using Wazuh and the ELK stack to monitor endpoints
+                and detect anomalies.
+              </p>
+              <p className="text-sm text-gray-500 mt-2">Coming Soon...</p>
+            </CardContent>
+          </Card>
+        </section>
 
-<section class="section-block">
-  <h2>Certifications</h2>
-  <ul>
-    <li>Git & GitHub – Simplilearn</li>
-    <li>Linux Essentials – Self Study</li>
-    <li>CEH – In Progress</li>
-  </ul>
-</section>
+        {/* Certifications */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Certifications</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Git & GitHub – Simplilearn</li>
+            <li>Linux Essentials – Self Study</li>
+            <li>CEH – In Progress</li>
+          </ul>
+        </section>
 
-<section class="section-block">
-  <h2>Contact</h2>
-  <ul>
-    <li>Email: yourmail@example.com</li>
-    <li>GitHub: <a href="https://github.com/spandhare11" target="_blank">spandhare11</a></li>
-    <li>LinkedIn: <a href="#">[Add your LinkedIn]</a></li>
-  </ul>
-</section>
+        {/* Contact */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Contact</h2>
+          <ul className="space-y-2">
+            <li>Email: yourmail@example.com</li>
+            <li>
+              GitHub: <a href="https://github.com/spandhare11" className="text-blue-600">spandhare11</a>
+            </li>
+            <li>
+              LinkedIn: <a href="#" className="text-blue-600">[Add your LinkedIn]</a>
+            </li>
+          </ul>
+        </section>
+      </main>
 
-<footer>
-  © 2025 Shubham Pandhare • Hosted on GitHub Pages
-</footer>
-
-</body>
-</html>
+      <footer className="bg-black text-white text-center py-6 text-sm">
+        © 2025 Shubham Pandhare • Hosted on GitHub Pages
+      </footer>
+    </div>
+  );
+}
