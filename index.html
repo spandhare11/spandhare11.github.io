@@ -22,30 +22,39 @@
             },
             animation: {
               fadeInUp: 'fadeInUp 0.8s ease-out',
+            },
+            colors: {
+              primary: '#2563eb',
+              accent: '#38bdf8',
             }
           }
         }
       }
     </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body class="bg-gradient-to-br from-slate-100 to-white text-gray-800 font-poppins">
-    <header class="bg-gray-900 text-white py-12 px-6 text-center shadow-lg">
-      <h1 class="text-5xl font-bold mb-3 animate-fadeInUp">Shubham Pandhare</h1>
-      <p class="text-lg animate-fadeInUp">Cybersecurity & Network Engineer | Learning Every Day</p>
+  <body class="bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-slate-100 bg-cover bg-fixed text-gray-800 font-poppins">
+    <header class="bg-gray-900 bg-opacity-90 text-white py-12 px-6 text-center shadow-lg">
+      <h1 class="text-5xl font-bold mb-3 animate-fadeInUp tracking-wide">Shubham Pandhare</h1>
+      <p class="text-lg animate-fadeInUp italic text-accent font-semibold tracking-wide">Cybersecurity & Network Engineer | Learning Every Day</p>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-12 space-y-12">
+    <main class="max-w-6xl mx-auto px-6 py-14 space-y-16">
       <section class="animate-fadeInUp">
-        <h2 class="text-2xl text-blue-600 font-semibold border-b pb-2 mb-4">About Me</h2>
-        <p>Hi, I'm Shubham — passionate about cybersecurity, network engineering, and building things with tech. I'm currently working at Indoco Remedies as a trainee network engineer and learning tools like Wazuh, Splunk, and more.</p>
+        <h2 class="text-3xl text-primary font-semibold border-b-2 border-primary pb-2 mb-4">👨‍💻 About Me</h2>
+        <p class="leading-relaxed">Hi, I'm Shubham — passionate about cybersecurity, network engineering, and building things with tech. I'm currently working at Indoco Remedies as a trainee network engineer and learning tools like Wazuh, Splunk, and more.</p>
       </section>
 
       <section class="animate-fadeInUp">
-        <h2 class="text-2xl text-blue-600 font-semibold border-b pb-2 mb-4">Skills</h2>
+        <h2 class="text-3xl text-primary font-semibold border-b-2 border-primary pb-2 mb-4">🧠 Skills</h2>
         <div class="flex flex-wrap gap-4 mb-4">
-          <button onclick="showSkill('networking')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Skills</button>
-          <button onclick="showSkill('tools')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Tools</button>
-          <button onclick="showSkill('languages')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Languages</button>
+          <button onclick="showSkill('networking')" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Networking</button>
+          <button onclick="showSkill('tools')" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Tools</button>
+          <button onclick="showSkill('languages')" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Languages</button>
         </div>
         <div id="networking" class="skills-section">
           <ul class="list-disc list-inside">
@@ -69,56 +78,67 @@
       </section>
 
       <section class="animate-fadeInUp">
-        <h2 class="text-2xl text-blue-600 font-semibold border-b pb-2 mb-4">Projects</h2>
-
-        <div class="bg-white rounded shadow-md p-6 mb-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold">🔹 Phishing and C2 Red Team Lab</h3>
-          <p class="mt-2">Developed a phishing attack simulation using Zphisher and Ngrok. Configured DNS spoofing, deployed phishing pages, and analyzed captured credentials. Set up C2 channel for remote shell access.</p>
-          <a href="https://www.notion.so/Phishing-and-C2-Control-Red-Team-21ab3b78551d8033b05afea6f709bd9d?source=copy_link" target="_blank" class="text-blue-500 underline mt-2 inline-block">View Project</a>
-        </div>
-
-        <div class="bg-white rounded shadow-md p-6 mb-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold">🔹 Splunk SIEM Lab</h3>
-          <p class="mt-2">Implemented Sysmon for Windows logging, ingested logs into Splunk, created detection alerts for reverse shells and suspicious PowerShell execution. Used search queries to analyze TTPs.</p>
-          <a href="https://enchanted-snowboard-a2d.notion.site/Splunk-22eb3b78551d8053851ddfd7e41fe24c?pvs=73" target="_blank" class="text-blue-500 underline mt-2 inline-block">View Project</a>
-        </div>
-
-        <div class="bg-white rounded shadow-md p-6 mb-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold">🔹 Phishing Website Detection Lab</h3>
-          <p class="mt-2">Simulated phishing website attacks and integrated with Wazuh for real-time alerting. Modified NGINX config to redirect payloads. Demonstrated detection via log analysis rules and screenshots.</p>
-          <a href="https://enchanted-snowboard-a2d.notion.site/Phishing-Website-232b3b78551d80369249f511ce4e6afc" target="_blank" class="text-blue-500 underline mt-2 inline-block">View Project</a>
-        </div>
-      </section>
-
-      <section class="animate-fadeInUp">
-        <h2 class="text-2xl text-blue-600 font-semibold border-b pb-2 mb-4">Certifications</h2>
-        <div class="bg-white p-4 rounded shadow">
-          <p>✅ Simplilearn Git & GitHub Certification</p>
-          <p>✅ Linux Basics Certification</p>
-          <p>✅ CEH (in-progress)</p>
+        <h2 class="text-3xl text-primary font-semibold border-b-2 border-primary pb-2 mb-4">📂 Projects</h2>
+        <div class="flex flex-col gap-8">
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+            <h3 class="text-xl font-bold">🔹 Phishing and C2 Red Team Lab</h3>
+            <p class="mt-2">Simulated phishing attack with Zphisher and Ngrok. Configured DNS spoofing, phishing page deployment, and credential capture. C2 channel enabled.</p>
+            <a href="https://www.notion.so/Phishing-and-C2-Control-Red-Team-21ab3b78551d8033b05afea6f709bd9d?source=copy_link" target="_blank" class="text-primary underline mt-2 inline-block">View Project</a>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+            <h3 class="text-xl font-bold">🔹 Splunk SIEM Lab</h3>
+            <p class="mt-2">Used Sysmon for logging, sent logs to Splunk, detected reverse shell and suspicious behavior via custom alerts and queries.</p>
+            <a href="https://enchanted-snowboard-a2d.notion.site/Splunk-22eb3b78551d8053851ddfd7e41fe24c?pvs=73" target="_blank" class="text-primary underline mt-2 inline-block">View Project</a>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+            <h3 class="text-xl font-bold">🔹 Phishing Website Detection Lab</h3>
+            <p class="mt-2">Tested phishing detection using NGINX and Wazuh. Wrote detection rules and verified alerts from phishing simulation.</p>
+            <a href="https://enchanted-snowboard-a2d.notion.site/Phishing-Website-232b3b78551d80369249f511ce4e6afc" target="_blank" class="text-primary underline mt-2 inline-block">View Project</a>
+          </div>
         </div>
       </section>
 
       <section class="animate-fadeInUp">
-        <h2 class="text-2xl text-blue-600 font-semibold border-b pb-2 mb-4">Download Resume</h2>
-        <a href="https://drive.google.com/uc?export=download&id=1Ogcfwe5rm5RNf4j9UBtS6MnUgOR3ObG9" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        <h2 class="text-3xl text-primary font-semibold border-b-2 border-primary pb-2 mb-4">🎓 Certifications</h2>
+        <ul class="bg-white p-4 rounded-lg shadow space-y-2">
+          <li>✅ Simplilearn Git & GitHub Certification</li>
+          <li>✅ Linux Basics Certification</li>
+          <li>✅ CEH (in-progress)</li>
+        </ul>
+      </section>
+
+      <section class="animate-fadeInUp">
+        <h2 class="text-3xl text-primary font-semibold border-b-2 border-primary pb-2 mb-4">📄 Download Resume</h2>
+        <a href="https://drive.google.com/uc?export=download&id=1Ogcfwe5rm5RNf4j9UBtS6MnUgOR3ObG9" target="_blank" class="inline-block bg-primary text-white px-5 py-3 rounded-full hover:bg-blue-700 transition">
           <i class="fas fa-download mr-2"></i>Download Resume (PDF)
         </a>
       </section>
 
       <section class="animate-fadeInUp">
-        <h2 class="text-2xl text-blue-600 font-semibold border-b pb-2 mb-4">Contact</h2>
-        <div class="space-y-3">
-          <p><i class="fas fa-envelope text-blue-500 mr-2"></i>Email: <a href="mailto:yourmail@example.com" class="text-blue-600">yourmail@example.com</a></p>
-          <p><i class="fas fa-phone-alt text-blue-500 mr-2"></i>Phone: <a href="tel:+919372277107" class="text-blue-600">+91 93722 77107</a></p>
-          <p><i class="fab fa-github text-blue-500 mr-2"></i>GitHub: <a href="https://github.com/spandhare11" target="_blank" class="text-blue-600">spandhare11</a></p>
-          <p><i class="fab fa-linkedin text-blue-500 mr-2"></i>LinkedIn: <a href="#" target="_blank" class="text-blue-600">[Add your LinkedIn URL]</a></p>
+        <h2 class="text-3xl text-primary font-semibold border-b-2 border-primary pb-2 mb-4">📬 Contact</h2>
+        <div class="space-y-4 text-lg">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">📧</span>
+            <a href="mailto:spandhare07@gmail.com" class="text-blue-600 hover:underline">spandhare07@gmail.com</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">📞</span>
+            <a href="tel:+919372277107" class="text-blue-600 hover:underline">+91 93722 77107</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🐙</span>
+            <a href="https://github.com/spandhare11" target="_blank" class="text-blue-600 hover:underline">github.com/spandhare11</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">💼</span>
+            <a href="https://www.linkedin.com/in/pandhare-shubham" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/pandhare-shubham</a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-gray-900 text-white text-center py-4">
-      <p>© 2025 Shubham Pandhare</p>
+    <footer class="bg-gray-900 text-white text-center py-6 mt-12">
+      <p>© 2025 Shubham Pandhare. All rights reserved.</p>
     </footer>
 
     <script>
